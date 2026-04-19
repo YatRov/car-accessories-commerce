@@ -10,15 +10,16 @@ export default function Hero(){
         autoPlay
         muted
         loop
-        playsInline
+        controls
+        disablePictureInPicture
       >
         <source src="/video.mp4" type="video/mp4" />
       </video>
 
-      <div className="hero-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center text-white">
+      <div className="hero-overlay">
         <h1 className="display-5 fw-bold">Audi Fan Shop</h1>
         <p className="lead">Twój styl nie potrzebuje kompromisów</p>
-      </div>
+    </div>
     </div>
   );
 };

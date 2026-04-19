@@ -6,3 +6,11 @@
 .icon:hover {
   color: #bbb;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+#produkty {
+  scroll-margin-top: 80px;
+}
