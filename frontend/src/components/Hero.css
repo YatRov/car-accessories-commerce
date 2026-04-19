@@ -1,0 +1,13 @@
+.hero-container {
+  height: 100vh;
+}
+
+.hero-video {
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
