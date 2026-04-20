@@ -1,15 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Login from "./pages/login";
-import { useEffect } from "react";
+import ScrollToTop from "./components/ScrollReset";
 
 function App() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  return (
+  return(
     <BrowserRouter>
+      <ScrollToTop />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />

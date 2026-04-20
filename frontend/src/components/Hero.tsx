@@ -10,7 +10,6 @@ export default function Hero(){
         autoPlay
         muted
         loop
-        controls
         disablePictureInPicture
       >
         <source src="/video.mp4" type="video/mp4" />
