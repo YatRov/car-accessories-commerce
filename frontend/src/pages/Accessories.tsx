@@ -15,19 +15,13 @@ const products = [
     price: 199,
     image: "https://ae01.alicdn.com/kf/S4f28faceb37b40fc94772825cc53d6f6d.jpg",
   },
-  {
-    id: 3,
-    title: "Sport watch",
-    price: 149,
-    image: "",
-  },
 ];
 
 export default function Accessories() {
   return (
     <div className="wrapper">
       <div className="container">
-        <h2 className="text-center mt-4">Accessories</h2>
+        <h2 className="mt-4">Accessories</h2>
 
         <div className="row">
           {products.map((p) => (
