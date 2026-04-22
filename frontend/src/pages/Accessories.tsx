@@ -5,7 +5,7 @@ import ProductCard from "../components/ProductCard";
 const products = [
   {
     id: 1,
-    title: "Yail wrist watch",
+    title: "Bag",
     price: 299,
     image: "https://cdn11.bigcommerce.com/s-pn4c35ct31/images/stencil/1280x1280/products/315/618/8U0061109__59158.1605960265.jpg?c=2",
   },
