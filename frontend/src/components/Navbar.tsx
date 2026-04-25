@@ -25,19 +25,23 @@ export default function Navbar() {
         {/* Menu */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto ms-3">
+    
             <li className="nav-item">
               <button className="nav-link text-white bg-transparent" onClick={scrollToAboutUs}>
                     O nas
                 </button>
             </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="">Kontakt</a>
-            </li>
+            
             <li className="nav-item">
                 <button className="nav-link text-white bg-transparent" onClick={scrollToProducts}>
                     Produkty
                 </button>
             </li>
+
+            <li className="nav-item">
+              <a className="nav-link text-white" href="">Kontakt</a>
+            </li>
+            
           </ul>
 
           {/* Ikony */}

@@ -1,20 +1,29 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./AboutUs.css";
 
-export default function AboutUs(){
-    return(
-        <div className="wrapper">
-              <div className="container">
-                <h2 className="mt-4">About Us</h2>
-                <h2 className="mt-4">THE FOURTH RING</h2>
-                <h3 className="mt-4">Lifestyle Store</h3>
-              </div>
-              <div className="TextAboutUs">
-                <p>The Fourth Ring to autorski koncept lifestyle’owego sklepu z akcesoriami, 
-                    stworzony dla tych, dla których niemiecka motoryzacja to coś więcej niż 
-                    transport. Naszą misją jest dostarczanie rozwiązań, które wypełniają lukę
-                     między fabrycznym wyposażeniem a codzienną eksploatacją samochodu przez 
-                     entuzjastę.</p>
-              </div>
-            </div>
-    )
+export default function AboutUs() {
+  return (
+    <div className="about">
+      <img src="/AboutUsWallpaper.png" alt="bg" className="bg" />
+
+      <div className="container content">
+        <div className="row h-100 align-items-center">
+          <div className="col-12 col-md-5 text-white">
+            <h1 className="title">O NAS</h1>
+
+            <p className="text">
+              The Fourth Ring to autorski koncept lifestyle’owego sklepu z akcesoriami
+              dla fanów niemieckiej motoryzacji premium. Tworzymy przestrzeń, w której
+              estetyka, technologia i codzienna funkcjonalność spotykają się w jednym stylu.
+              
+              <br /><br />
+              Skupiamy się na detalach — od wnętrza samochodu po akcesoria, które podkreślają
+              charakter kierowcy. Każdy produkt jest selekcjonowany tak, aby łączył fabryczną
+              jakość z nowoczesnym designem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
