@@ -11,6 +11,7 @@ export default function Hero(){
         muted
         loop
         disablePictureInPicture
+        playsInline
       >
         <source src="/video.mp4" type="video/mp4" />
       </video>
