@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Hero.css";
+import "./Hero.css"
 
 export default function Hero(){
   return (

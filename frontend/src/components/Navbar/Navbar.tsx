@@ -12,12 +12,23 @@ export default function Navbar() {
         <Link className="navbar-brand" to="/">
           <img src="/logo.png" alt="TheFourthRing" height={50}/>
         </Link>
+        
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          >
+            <span className="navbar-toggler-icon"></span>
+        </button>
 
         {/* Menu */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto ms-3">
             <li className="nav-item">
-              <a className="nav-link text-white" href="">O nas</a>
+              <button className="nav-link text-white bg-transparent" onClick={scrollToAboutUs}>
+                    O nas
+                </button>
             </li>
             <li className="nav-item">
               <a className="nav-link text-white" href="">Kontakt</a>
@@ -46,7 +57,13 @@ export default function Navbar() {
 
 
 const scrollToProducts = () => {
-  document.getElementById("produkty")?.scrollIntoView({
+  document.getElementById("Accessories")?.scrollIntoView({
+    behavior: "smooth",
+  });
+};
+
+const scrollToAboutUs = () => {
+  document.getElementById("AboutUs")?.scrollIntoView({
     behavior: "smooth",
   });
 };

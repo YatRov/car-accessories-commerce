@@ -1,5 +1,6 @@
-import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
+import Hero from "../components/Hero/Hero";
+import Navbar from "../components/Navbar/Navbar";
+import AboutUs from "./AboutUs";
 import Product from "./Accessories";
 
 export default function Home() {
@@ -7,9 +8,15 @@ export default function Home() {
     <>
     <Navbar/>
     <Hero/>
-    <section id="produkty">
+
+    <section id="AboutUs">
+      <AboutUs/>
+    </section>
+
+    <section id="Accessories">
       <Product/>
     </section>
+    
     </>
   );
 }

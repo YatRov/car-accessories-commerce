@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Accessories.css";
-import ProductCard from "../components/ProductCard";
+import "../Accessories.css";
+import ProductCard from "../components/ProductCard/ProductCard";
 
 const products = [
   {
