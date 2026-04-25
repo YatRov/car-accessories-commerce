@@ -4,7 +4,6 @@ export default function AboutUs(){
     return(
         <div className="wrapper">
               <div className="container">
-                <img src="./AboutUsWallpaper.png" alt="AboutUs"></img>
                 <h2 className="mt-4">About Us</h2>
                 <h2 className="mt-4">THE FOURTH RING</h2>
                 <h3 className="mt-4">Lifestyle Store</h3>
