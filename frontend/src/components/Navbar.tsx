@@ -2,6 +2,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Link } from "react-router-dom";
+import { scrollToId } from "./scroll";
+
 
 export default function Navbar() {
   return (
@@ -27,21 +29,23 @@ export default function Navbar() {
           <ul className="navbar-nav me-auto ms-3">
     
             <li className="nav-item">
-              <button className="nav-link text-white bg-transparent" onClick={scrollToAboutUs}>
+              <button className="nav-link text-white bg-transparent" onClick={() => scrollToId("AboutUs")}>
                     O nas
                 </button>
             </li>
             
             <li className="nav-item">
-                <button className="nav-link text-white bg-transparent" onClick={scrollToProducts}>
+                <button className="nav-link text-white bg-transparent" onClick={() => scrollToId("Accessories")}>
                     Produkty
                 </button>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link text-white" href="">Kontakt</a>
+                <button className="nav-link text-white bg-transparent" onClick={() => scrollToId("ContactUs")}>
+                    Kontakt
+                </button>
             </li>
-            
+
           </ul>
 
           {/* Ikony */}
@@ -58,16 +62,3 @@ export default function Navbar() {
     </nav>
   );
 }
-
-
-const scrollToProducts = () => {
-  document.getElementById("Accessories")?.scrollIntoView({
-    behavior: "smooth",
-  });
-};
-
-const scrollToAboutUs = () => {
-  document.getElementById("AboutUs")?.scrollIntoView({
-    behavior: "smooth",
-  });
-};
