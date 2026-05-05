@@ -19,7 +19,7 @@ const products = [
 
 export default function Accessories() {
   return (
-    <div className="wrapper">
+    <div className="wrapper-accessories">
       <div className="container">
         <h2 className="mt-4">Accessories</h2>
 
