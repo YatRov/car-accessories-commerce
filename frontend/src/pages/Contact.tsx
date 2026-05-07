@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Contact.css";
+import React from "react";
 
 const contactItems = [
   {
@@ -20,12 +21,12 @@ const contactItems = [
 ];
 
 const socials = [
-  { icon: "bi-instagram", url: "https://www.instagram.com/" },
-  { icon: "bi-facebook", url: "https://www.facebook.com/" },
+  {icon: "bi-instagram", url: "https://www.instagram.com/" },
+  {icon: "bi-facebook", url: "https://www.facebook.com/" },
 ];
 
 export default function Contact(){
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
   };
 
