@@ -11,10 +11,9 @@ export default function Hero(){
         muted
         loop
         disablePictureInPicture
-        webkit-playsinline="true"
         playsInline
       >
-        <source src="https://res.cloudinary.com/du95npvcn/video/upload/v1778159695/video.mp4" type="video/mp4" />
+        <source src="/video.mp4" type="video/mp4" />
       </video>
 
       <div className="hero-overlay">
