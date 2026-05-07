@@ -13,7 +13,7 @@ export default function Hero(){
         disablePictureInPicture
         playsInline
       >
-        <source src="/video.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/du95npvcn/video/upload/v1778159695/video.mp4" type="video/mp4" />
       </video>
 
       <div className="hero-overlay">
