@@ -35,7 +35,7 @@ export default function Contact(){
         <h1 className="contact-title">Kontakt</h1>
 
         <div className="row">
-          {/* FORM */}
+          {/*form*/}
           <div className="col-12 col-md-6">
             <form className="form-custom" onSubmit={handleSubmit}>
               <input type="text" className="form-control" placeholder="Name" />
@@ -48,7 +48,7 @@ export default function Contact(){
             </form>
           </div>
 
-          {/* INFO */}
+          {/*info*/}
           <div className="col-12 col-md-5 offset-md-1">
             <div className="contact-info-container">
               {contactItems.map((item) => (
