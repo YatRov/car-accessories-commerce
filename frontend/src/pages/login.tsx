@@ -1,7 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./login.css"
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e: React.FormEvent) =>{
+    e.preventDefault();
+    navigate("/registration");
+  };
+
   return (
     <section className="container-fluid vh-100 p-0">
       <div className="row h-100 m-0">
@@ -11,9 +19,9 @@ export default function Login() {
             <p className="text-welcome">The Fourth Ring</p>
             <h1 className="welcome-title">Witamy</h1>
 
-            <form className="form-custom">
+            <form className="form-custom" onSubmit={handleSubmit}>
               <label>Adres e-mail</label>
-              <input type="email" className="form-control" />
+              <input type="email" className="form-control_2" />
               <button type="submit" className="btn btn-dark btn-login w-100 mt-3">
                 Dalej
               </button>

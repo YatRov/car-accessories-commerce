@@ -16,16 +16,16 @@
   gap: 20px;
 }
 
-.form-control {
+.form-control_2 {
   border: none !important;
-  border-bottom: 1px solid #640909 !important;
+  border-bottom: 1px solid #999 !important;
   border-radius: 0 !important;
   background: transparent !important;
   padding-left: 0 !important;
   color: black !important;
 }
 
-.form-control:focus {
+.form-control_2:focus {
   box-shadow: none !important;
   border-color: black !important;
 }
